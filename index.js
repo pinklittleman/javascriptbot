@@ -19,4 +19,20 @@ client.on('messageCreate', (message) => {
   }
 })
 
+client.on('messageCreate', (message) => {
+	if(message.content === 'china'){
+	message.reply({
+	content: 'long live the CPP'
+	})
+  }
+})
+
+client.on('messageCreate', (message) => {
+	if(message.content === 'ukraine'){
+	message.reply({
+	content: 'GOOD'
+	})
+  }
+})
+
 client.login(process.env.TOKEN)
