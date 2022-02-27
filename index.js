@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const TOKEN="OTQ3MzA3NzI1ODc0OTMzNzkw.YhrXEQ.zlSXSHYHnYZIouLy8zrPYgfKrbg"
+require('dotenv').config();
 const client = new Discord.Client({
 	intents: [
 	"GUILDS",
@@ -10,4 +10,13 @@ const client = new Discord.Client({
 client.on("ready", () => {
 	console.log('logged in as ${client.user.tag}')
 })
-client.login(TOKEN)
+
+client.on('messageCreate', (message) => {
+	if(message.content === 'russia'){
+	message.reply({
+	content: 'BAD'
+	})
+  }
+})
+
+client.login(process.env.TOKEN)
