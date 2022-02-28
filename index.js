@@ -11,8 +11,11 @@ client.on('ready', client => {
 	client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
 })
 
-const channel = client.channels.fetch('934520011857461278');
-channel.send('hi');
+client.on('message', function(message) {
+	if (message.content === 'ping') {
+	 message.author.send('I AM IN YOUR WALLS');
+	}
+   });
 
 client.on('messageCreate', (message) => {
 	if(message.content === 'femboy'){
