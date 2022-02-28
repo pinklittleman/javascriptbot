@@ -11,7 +11,7 @@ client.on('ready', client => {
 	client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
 })
 
-client.on('message', function(message) {
+client.on('messageCreate', function(message) {
 	if (message.content === 'ping') {
 	 message.author.send('I AM IN YOUR WALLS');
 	}
