@@ -13,7 +13,9 @@ client.on('ready', client => {
 
 client.on('messageCreate', (message) => {
 	if(message.content === 'femboy'){
-		client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
+		while(true){
+			client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
+		}
 	}
 })
 
