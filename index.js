@@ -7,8 +7,8 @@ const client = new Discord.Client({
     ]
 })
 
-client.on("ready", () => {
-	console.log('logged in as ${client.user.tag}')
+client.on('ready', client => {
+        client.channels.cache.get('934520011857461278').send('')
 })
 
 client.on('messageCreate', (message) => {
