@@ -8,7 +8,13 @@ const client = new Discord.Client({
 })
 
 client.on('ready', client => {
-        client.channels.cache.get('934520011857461278').send('')
+        client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
+})
+
+client.on('messageCreate', (message) => {
+	if(message.content === 'femboy'){
+		client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
+	}
 })
 
 client.on('messageCreate', (message) => {
