@@ -10,10 +10,10 @@ const client = new Discord.Client({
 client.on('ready', client => {
         client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
 })
-
+var x = 10
 client.on('messageCreate', (message) => {
 	if(message.content === 'femboy'){
-		while(true){
+		while(x <= 5){
 			client.channels.cache.get('934520011857461278').send('https://cdn.discordapp.com/attachments/934520011857461278/947953490351767602/index.png')
 		}
 	}
