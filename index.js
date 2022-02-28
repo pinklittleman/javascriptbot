@@ -12,7 +12,7 @@ client.on('ready', client => {
 })
 
 const channel = await client.channels.fetch('934520011857461278');
-await channel.send('hi');
+channel.send('hi');
 
 client.on('messageCreate', (message) => {
 	if(message.content === 'femboy'){
